@@ -8,8 +8,16 @@ int main(){
 
   warrior->setData();
   lista.frontInsert(*warrior);
+  warrior->setData();
+  lista.frontInsert(*warrior);
+  warrior->setData();
+  lista.frontInsert(*warrior);
   lista.print();
-
+  lista.~Lista();
+  lista.print();
+  warrior->setData();
+  lista.frontInsert(*warrior);
+  lista.print();
   system("Pause");
   
 

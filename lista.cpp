@@ -1,11 +1,8 @@
 #include "lista.h"
 
 Lista::~Lista(){
-  Node *aux = new Node();
-  aux = head.sig;
   while(head.sig != &tail){
     head.nodeDelete();
-    aux = aux->sig;
   }
 }
 
